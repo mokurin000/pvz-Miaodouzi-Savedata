@@ -4,10 +4,14 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13,<3.14"
-dependencies = ["pydantic>=2.13.4"]
+dependencies = [
+    "pydantic>=2.13.4",
+    "questionary>=2.1.1",
+]
 
 [project.scripts]
 display-cards = "pvz_miaodouzi.show_cards:main"
+edit-savedata = "pvz_miaodouzi.edit_save:main"
 
 [tool.uv]
 package = true

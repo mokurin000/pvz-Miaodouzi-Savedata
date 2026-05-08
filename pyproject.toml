@@ -1,0 +1,13 @@
+[project]
+name = "pvz-miaodouzi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = ["pydantic>=2.13.4"]
+
+[project.scripts]
+display-cards = "pvz_miaodouzi.show_cards:main"
+
+[tool.uv]
+package = true

@@ -1,0 +1,1379 @@
+[
+    {
+        "namea": "豌豆射手",
+        "jieshao": "你的第一道防线！向敌人射出豌豆",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 0,
+        "cost": 100,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "向日葵",
+        "jieshao": "提供你额外的阳光",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 1,
+        "cost": 50,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "尖刺坚果",
+        "jieshao": "阻挡僵尸的同时，对僵尸造成伤害",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 2,
+        "cost": 75,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "土豆地雷",
+        "jieshao": "敌人接触后爆炸, 但需要时间安放",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 3,
+        "cost": 25,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "全息豌豆射手",
+        "jieshao": "发射回旋的全息豌豆，全息豌豆可穿透三只僵尸。不会被僵尸发现",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 4,
+        "cost": 100,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "坚果",
+        "jieshao": "阻碍僵尸前进, 并保护你其他的植物",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 5,
+        "cost": 50,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "受伤的豌豆射手",
+        "jieshao": "受伤又如何，保护你的脑子才是最重要的事情",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 6,
+        "cost": 25,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "原始豌豆射手",
+        "jieshao": "发射震慑僵尸的原始豌豆",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 7,
+        "cost": 175,
+        "coolDown": 12.5
+    },
+    {
+        "namea": "豌豆投手",
+        "jieshao": "只是朴质无华的投掷豌豆罢了",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 8,
+        "cost": 50,
+        "coolDown": 3.0
+    },
+    {
+        "namea": "机枪投手",
+        "jieshao": "一次可以投掷四颗豌豆",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 9,
+        "cost": 200,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "樱桃炸弹",
+        "jieshao": "炸掉一定区域内的所有僵尸",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 10,
+        "cost": 150,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "阳光精灵球",
+        "jieshao": "立刻生产一些阳光后消失",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 11,
+        "cost": 0,
+        "coolDown": 40.0
+    },
+    {
+        "namea": "爆炸坚果",
+        "jieshao": "僵尸直呼 \"好吃到爆炸！\"",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 12,
+        "cost": 125,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "龙舌兰",
+        "jieshao": "血量较高，血量越低，攻击速度越快。每次攻击会恢复血量",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 13,
+        "cost": 250,
+        "coolDown": 15.0
+    },
+    {
+        "namea": "彩虹星星果",
+        "jieshao": "发射一大堆星星，一段时间后消失",
+        "isMogu": false,
+        "xiyoudu": 4,
+        "plantId": 14,
+        "cost": 125,
+        "coolDown": 40.0
+    },
+    {
+        "namea": "猫尾草",
+        "jieshao": "攻击任何线上的僵尸（种植在水上）",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 15,
+        "cost": 250,
+        "coolDown": 25.0
+    },
+    {
+        "namea": "阳光花盆",
+        "jieshao": "可以栽种植物的同时，定期生产小阳光",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 16,
+        "cost": 25,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "水盆",
+        "jieshao": "可以种植水生植物，不可种植睡莲",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 17,
+        "cost": 50,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "爆炸猫尾草",
+        "jieshao": "发射跟踪爆炸尖刺（种植在水上）",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 18,
+        "cost": 150,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "可爱向日葵",
+        "jieshao": "提供你额外的阳光，有概率多生产一个小阳光",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 19,
+        "cost": 50,
+        "coolDown": 9.0
+    },
+    {
+        "namea": "小喷菇",
+        "jieshao": "向敌人发射短程孢子",
+        "isMogu": true,
+        "xiyoudu": 1,
+        "plantId": 20,
+        "cost": 0,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "寒冰小喷菇",
+        "jieshao": "向敌人发射冻人的短程孢子",
+        "isMogu": true,
+        "xiyoudu": 2,
+        "plantId": 21,
+        "cost": 0,
+        "coolDown": 8.5
+    },
+    {
+        "namea": "寒冰豌豆投手",
+        "jieshao": "投掷造成减速的豌豆",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 22,
+        "cost": 125,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "寒冰樱桃炸弹",
+        "jieshao": "爆炸时减速范围内的僵尸并造成少量伤害",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 23,
+        "cost": 75,
+        "coolDown": 8.5
+    },
+    {
+        "namea": "毒大蒜投手",
+        "jieshao": "投掷让僵尸中毒的毒大蒜，优先瞄准未中毒的僵尸",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 24,
+        "cost": 225,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "阳光精灵球",
+        "jieshao": "立刻生产一些阳光后消失",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 25,
+        "cost": 100,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "火焰豌豆射手",
+        "jieshao": "发射火焰豌豆",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 26,
+        "cost": 175,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "冰火射手",
+        "jieshao": "同时发射寒冰豌豆和火焰豌豆",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 27,
+        "cost": 275,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "鬼火豌豆射手",
+        "jieshao": "发射令僵尸减速的鬼火豌豆",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 28,
+        "cost": 175,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "玫瑰剑客",
+        "jieshao": "对前方的僵尸造成成超高的伤害。在场时，每秒耗费些许阳光。当阳光不足时，玫瑰刺客会退场",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 29,
+        "cost": 0,
+        "coolDown": 3.5
+    },
+    {
+        "namea": "低坚果",
+        "jieshao": "有概率被僵尸无视",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 30,
+        "cost": 25,
+        "coolDown": 9.0
+    },
+    {
+        "namea": "机枪石榴",
+        "jieshao": "快速的发射大量伤害较低的石榴子弹",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 31,
+        "cost": 200,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "不安之树",
+        "jieshao": "每隔一段时间，秒杀场上六只僵尸",
+        "isMogu": false,
+        "xiyoudu": 5,
+        "plantId": 32,
+        "cost": 100,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "阳光菇",
+        "jieshao": "提供少量的阳光，长大后提供正常的阳光",
+        "isMogu": true,
+        "xiyoudu": 1,
+        "plantId": 33,
+        "cost": 25,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "胆小菇",
+        "jieshao": "远程射手, 但敌人靠近时会蜷缩不动",
+        "isMogu": true,
+        "xiyoudu": 1,
+        "plantId": 34,
+        "cost": 25,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "窝瓜",
+        "jieshao": "压扁接近的僵尸",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 35,
+        "cost": 50,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "傻呆瓜",
+        "jieshao": "压扁接近的僵尸...真的可以压扁吗？",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 36,
+        "cost": 0,
+        "coolDown": 15.0
+    },
+    {
+        "namea": "机枪射手",
+        "jieshao": "一次发射四颗豌豆",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 37,
+        "cost": 325,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "猫猫星机枪",
+        "jieshao": "携带时，游戏开始获得少量阳光。首次种植后种植所需阳光增加。发射大量豌豆和星星，发射一定次数后发射一个大星星，概率发射追踪星星",
+        "isMogu": false,
+        "xiyoudu": 4,
+        "plantId": 38,
+        "cost": 225,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "全息樱桃炸弹",
+        "jieshao": "每隔一段时间造成一次范围的小爆炸。会炸毁其他全息植物",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 39,
+        "cost": 200,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "赛博竹子射手",
+        "jieshao": "发射赛博竹子，击中目标天上会掉落更多可以令僵尸感电的赛博竹子",
+        "isMogu": false,
+        "xiyoudu": 4,
+        "plantId": 40,
+        "cost": 225,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "花盆",
+        "jieshao": "可以在不毛之地上栽种植物",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 41,
+        "cost": 25,
+        "coolDown": 6.0
+    },
+    {
+        "namea": "受伤向日葵",
+        "jieshao": "提供两次小阳光后退场。她都这样了，你还想让她上战场吗？？",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 42,
+        "cost": -25,
+        "coolDown": 20.0
+    },
+    {
+        "namea": "懒猫豆射手",
+        "jieshao": "懒猫豆射手一点都不懒好嘛？",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 43,
+        "cost": 91,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "三头机枪",
+        "jieshao": "一次发射巨量豌豆。初始攻速很慢，单击即可花费600阳光进行升级",
+        "isMogu": false,
+        "xiyoudu": 4,
+        "plantId": 44,
+        "cost": 0,
+        "coolDown": 3.5
+    },
+    {
+        "namea": "大嘴花",
+        "jieshao": "啊呜一口吃掉僵尸",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 45,
+        "cost": 150,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "蟑螂茄子",
+        "jieshao": "请输入文本",
+        "isMogu": false,
+        "xiyoudu": 5,
+        "plantId": 46,
+        "cost": 175,
+        "coolDown": 35.0
+    },
+    {
+        "namea": "西瓜",
+        "jieshao": "投掷西瓜对范围内的僵尸造成伤害",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 48,
+        "cost": 300,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "毒液西瓜",
+        "jieshao": "投掷毒西瓜，对范围内的僵尸施加毒素",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 49,
+        "cost": 650,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "橙梦露炮手",
+        "jieshao": "具有超高韧性，并且可以轻微反伤僵尸。当本行有僵尸离橙梦露两格开外时，发射小范围的爆炸炮弹。可以令矿工僵尸强制出土",
+        "isMogu": false,
+        "xiyoudu": 4,
+        "plantId": 50,
+        "cost": 175,
+        "coolDown": 25.0
+    },
+    {
+        "namea": "暗影桃金娘",
+        "jieshao": "发射短距离穿透子弹，攻击时使自身以及前方两格的植物回血",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 51,
+        "cost": 150,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "火炬树桩",
+        "jieshao": "可以点燃豌豆",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 52,
+        "cost": 175,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "霸气创创战车",
+        "jieshao": "创飞！！全部创飞",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 53,
+        "cost": 75,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "执旗桃金娘",
+        "jieshao": "每隔一段时间产生大量阳光。场上此植物越多，费用越高",
+        "isMogu": false,
+        "xiyoudu": 4,
+        "plantId": 54,
+        "cost": 50,
+        "coolDown": 12.0
+    },
+    {
+        "namea": "长枪龙葵",
+        "jieshao": "近战攻击僵尸，每秒会扣血，击中僵尸可以生产阳光",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 55,
+        "cost": 50,
+        "coolDown": 12.0
+    },
+    {
+        "namea": "随机胆小菇",
+        "jieshao": "远程射手, 但敌人靠近时会变成其他植物，远离僵尸时恢复胆小菇。白天不会增加阳光",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 56,
+        "cost": 75,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "魔法磁力菇",
+        "jieshao": "使小范围内的敌方子弹消失。不会被僵尸啃咬",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 57,
+        "cost": 75,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "起源樱桃炸弹",
+        "jieshao": "会根据种植时范围内的僵尸数量来决定下一次的冷却时长",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 58,
+        "cost": 125,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "小樱桃",
+        "jieshao": "对附近小范围的僵尸造成伤害",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 59,
+        "cost": 25,
+        "coolDown": 3.0
+    },
+    {
+        "namea": "寒冰菇",
+        "jieshao": "冻结场上的僵尸",
+        "isMogu": true,
+        "xiyoudu": 2,
+        "plantId": 60,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "杂草",
+        "jieshao": "被僵尸无视。僵尸靠近时，啃咬僵尸",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 61,
+        "cost": 0,
+        "coolDown": 3.75
+    },
+    {
+        "namea": "豌豆窝瓜",
+        "jieshao": "压扁接近的僵尸并发射大量豌豆",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 62,
+        "cost": 200,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "毁灭菇",
+        "jieshao": "造成大范围的毁灭伤害",
+        "isMogu": true,
+        "xiyoudu": 2,
+        "plantId": 63,
+        "cost": 125,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "坑",
+        "jieshao": "为什么这种东西也在牌库里面",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 64,
+        "cost": -10,
+        "coolDown": 0.0
+    },
+    {
+        "namea": "电能土豆雷",
+        "jieshao": "出土时令周围的三只僵尸附着感电；出土时间短",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 65,
+        "cost": 75,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "三线射手",
+        "jieshao": "发射三路的豌豆。当种植在边路时，不会浪费子弹",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 66,
+        "cost": 325,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "电能小喷菇",
+        "jieshao": "向敌人发射冻人的短程孢子，孢子有概率变成电能子弹。当僵尸距离电能小喷菇过近时，必定发射电能子弹",
+        "isMogu": true,
+        "xiyoudu": 3,
+        "plantId": 67,
+        "cost": 25,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "双线射手",
+        "jieshao": "向上下路发射豌豆。当种植在边路时，不会浪费子弹",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 68,
+        "cost": 200,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "三线机枪射手",
+        "jieshao": "向三路发射大量豌豆。豌豆不会被浪费",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 69,
+        "cost": 700,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "冰冻生菜",
+        "jieshao": "冻住接近的僵尸",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 70,
+        "cost": 0,
+        "coolDown": 25.0
+    },
+    {
+        "namea": "火炬毁灭菇",
+        "jieshao": "造成大范围的毁灭伤害,将大范围的豌豆点燃，并留下一个火炬树桩",
+        "isMogu": true,
+        "xiyoudu": 2,
+        "plantId": 71,
+        "cost": 175,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "毁灭傻呆瓜",
+        "jieshao": "等待一段时间后落地造成大范围毁灭伤害",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 72,
+        "cost": 150,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "卡槽冷却重置器",
+        "jieshao": "将你卡槽里的植物冷却随机重置",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 73,
+        "cost": 100,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "反向机枪射手",
+        "jieshao": "一次发射四颗豌豆",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 74,
+        "cost": 100,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "全息机枪射手",
+        "jieshao": "一次发射四颗会回旋的全息豌豆，全息豌豆可穿透三只僵尸。不会被僵尸发现",
+        "isMogu": false,
+        "xiyoudu": 4,
+        "plantId": 75,
+        "cost": 325,
+        "coolDown": 15.0
+    },
+    {
+        "namea": "冰冻射手",
+        "jieshao": "发射可以冰冻僵尸的子弹。子弹命中僵尸时，若僵尸处于寒冷，伤害小幅提升；若僵尸处于冰冻，伤害大幅提升。",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 76,
+        "cost": 200,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "初恋",
+        "jieshao": "每隔一段时间，对一只僵尸感电并造成巨额伤害。",
+        "isMogu": false,
+        "xiyoudu": 4,
+        "plantId": 77,
+        "cost": 325,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "树坚果",
+        "jieshao": "坚固粗壮的根可以令矿工僵尸强制出土",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 78,
+        "cost": 75,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "全息牵牛花",
+        "jieshao": "攻击自身左边的所有僵尸",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 79,
+        "cost": 150,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "傻呆树",
+        "jieshao": "啥都能秒",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 80,
+        "cost": 175,
+        "coolDown": 15.0
+    },
+    {
+        "namea": "飓风甘蓝",
+        "jieshao": "击退整行的僵尸",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 81,
+        "cost": 75,
+        "coolDown": 35.0
+    },
+    {
+        "namea": "可爱柠檬龙",
+        "jieshao": "向三路发射腐蚀僵尸防具的强酸子弹，对有防具的僵尸造成巨量伤害",
+        "isMogu": false,
+        "xiyoudu": 4,
+        "plantId": 82,
+        "cost": 75,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "模仿小草",
+        "jieshao": "种植后，模仿下一个种植的植物。模仿完成后才可以进入冷却时间",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 83,
+        "cost": 150,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "坚果旋转一小时",
+        "jieshao": "阻挡僵尸的同时，缓慢的将僵尸推向左边",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 84,
+        "cost": 25,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "机枪机枪石榴",
+        "jieshao": "快速的发射超大量伤害较低的石榴子弹",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 85,
+        "cost": 300,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "珊瑚蝾螈",
+        "jieshao": "发射伤害较低的追踪僵尸的冰冻泡泡（种植在水上）",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 86,
+        "cost": 200,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "大喷菇",
+        "jieshao": "向敌人发射穿透孢子",
+        "isMogu": true,
+        "xiyoudu": 1,
+        "plantId": 87,
+        "cost": 75,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "寒冰大喷菇",
+        "jieshao": "向敌人发射穿透孢子并造成寒冷",
+        "isMogu": true,
+        "xiyoudu": 2,
+        "plantId": 88,
+        "cost": 125,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "电能大喷菇",
+        "jieshao": "向敌人发射穿透电能孢子，有概率使僵尸感电；对感电的僵尸造成更高的伤害",
+        "isMogu": true,
+        "xiyoudu": 3,
+        "plantId": 89,
+        "cost": 150,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "吸血向日葵",
+        "jieshao": "随机吸取一个植物20%的血量，并产生大量阳光。无法吸取同类的血量",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 90,
+        "cost": 50,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "阳光豆",
+        "jieshao": "吞进肚子的僵尸被攻击会产生阳光",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 91,
+        "cost": 0,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "双子向日葵",
+        "jieshao": "提供你更多额外的阳光",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 92,
+        "cost": 100,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "棱镜果",
+        "jieshao": "点击消耗阳光发射小范围爆炸的光弹",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 93,
+        "cost": 50,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "礼盒射手",
+        "jieshao": "发射随机的子弹",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 94,
+        "cost": 175,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "高坚果",
+        "jieshao": "不会被跳过的坚实壁垒",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 95,
+        "cost": 125,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "空心高坚果",
+        "jieshao": "被任何僵尸无视，但是可以阻挡跳跃",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 96,
+        "cost": 25,
+        "coolDown": 15.0
+    },
+    {
+        "namea": "草本高坚果",
+        "jieshao": "没被啃咬时，会急速回血",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 97,
+        "cost": 150,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "钢铁高坚果",
+        "jieshao": "没别的，就是硬！",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 98,
+        "cost": 250,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "大丽菊",
+        "jieshao": "僵尸靠近时，向周围释放毒气",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 99,
+        "cost": 0,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "爆炸杨桃",
+        "jieshao": "爆炸后发射五个爆炸小星星",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 100,
+        "cost": 125,
+        "coolDown": 40.0
+    },
+    {
+        "namea": "世界之手",
+        "jieshao": "点击可切换：快速的秒杀单个僵尸或者慢速的秒杀一群僵尸。群攻模式下攻速很慢。不被僵尸啃咬时，会缓慢的回血",
+        "isMogu": false,
+        "xiyoudu": 5,
+        "plantId": 101,
+        "cost": 150,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "礼盒大嘴花",
+        "jieshao": "啃咬僵尸后变化为随机的植物",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 102,
+        "cost": 250,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "雪人坚果",
+        "jieshao": "可以阻挡僵尸并让僵尸寒冷",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 103,
+        "cost": 150,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "幻彩寒冰菇",
+        "jieshao": "种下立刻冻结场上的僵尸，之后每次点击也可以冻结。点击三次后消失",
+        "isMogu": true,
+        "xiyoudu": 4,
+        "plantId": 104,
+        "cost": 100,
+        "coolDown": 65.0
+    },
+    {
+        "namea": "冬青投手",
+        "jieshao": "发射会爆炸的子弹；死亡后爆炸",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 105,
+        "cost": 175,
+        "coolDown": 15.0
+    },
+    {
+        "namea": "螺旋珊瑚",
+        "jieshao": "投掷旋转的尖刺穿透僵尸；死亡后转换为珊瑚地刺，对经过的僵尸造成伤害。",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 106,
+        "cost": 225,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "金鱼草种荚",
+        "jieshao": "使自身和左右两边的植物防爆。自身受到爆炸伤害后，扣除自身一点血量并对周围产生一次低伤害的爆炸",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 107,
+        "cost": 150,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "豌豆迫击炮",
+        "jieshao": "胡乱的发射豌豆",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 108,
+        "cost": 100,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "苹果迫击炮",
+        "jieshao": "向上下三路发射苹果，有概率发射令僵尸眩晕的金苹果。苹果不会被浪费",
+        "isMogu": false,
+        "xiyoudu": 4,
+        "plantId": 109,
+        "cost": 350,
+        "coolDown": 15.0
+    },
+    {
+        "namea": "甜蜜法师槲寄生",
+        "jieshao": "发射爱心冰冻子弹，另小范围的僵尸冰冻；对寒冷的僵尸造成更高的伤害；对冰冻的僵尸解冻，并造成巨额伤害",
+        "isMogu": false,
+        "xiyoudu": 4,
+        "plantId": 110,
+        "cost": 250,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "双向大喷菇",
+        "jieshao": "总有一天。。。",
+        "isMogu": true,
+        "xiyoudu": 1,
+        "plantId": 111,
+        "cost": 100,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "不戴眼镜卷心菜",
+        "jieshao": "不知道到底能不能看清对面的僵尸",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 112,
+        "cost": 0,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "原始机枪射手",
+        "jieshao": "发射大量震撼僵尸的原始豌豆",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 113,
+        "cost": 225,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "月夜菇",
+        "jieshao": "种植后立刻给予周围的月夜植物升级。自身需要通过月夜升级才可生长。（提示：此植物即使未生长的产能也和生长后的阳光菇一致）",
+        "isMogu": true,
+        "xiyoudu": 1,
+        "plantId": 114,
+        "cost": 25,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "月夜猫尾草",
+        "jieshao": "发射跟踪的尖刺或爆炸尖刺。月夜升级后：攻速略微降低，发射跟踪的毒尖刺或毒爆炸尖刺（种植在水上）",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 115,
+        "cost": 175,
+        "coolDown": 15.0
+    },
+    {
+        "namea": "月夜精灵球",
+        "jieshao": "固定产生一个阳光。自身周围每有一个非月夜植物都会额外产生15阳光；给予自身周围的月夜植物升级。",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 116,
+        "cost": 50,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "KMJ射手",
+        "jieshao": "先别管那么多了，种植后疯狂的点击这颗植物就完事了！！！",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 117,
+        "cost": 125,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "向日葵女王",
+        "jieshao": "提供你较多的额外阳光；可点燃经过的豌豆；每隔一段时间发射跟踪瓜子攻击僵尸；灼烧附近的僵尸",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 118,
+        "cost": 50,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "月夜豌豆射手",
+        "jieshao": "向前方发射两个孢子。月夜升级后：攻速略微降低，额外发射两个寒冰孢子",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 119,
+        "cost": 150,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "超级机枪射手",
+        "jieshao": "一次发射六个豌豆。每次攻击都有概率转化为强化攻击，发射超多豌豆。强化攻击后会自动升级：强化攻击会发射更多豌豆。等级上限为三级。",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 120,
+        "cost": 200,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "三头猫尾草",
+        "jieshao": "发射超多子弹，攻击任何线上的僵尸（种植在水上）",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 121,
+        "cost": 475,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "魅惑菇",
+        "jieshao": "让一只僵尸为你作战",
+        "isMogu": true,
+        "xiyoudu": 1,
+        "plantId": 122,
+        "cost": 75,
+        "coolDown": 40.0
+    },
+    {
+        "namea": "僵尸精灵球",
+        "jieshao": "生成一只魅惑铁桶僵尸",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 123,
+        "cost": 25,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "地狱坚果",
+        "jieshao": "血量极高。持续掉血产阳光（血越少产越多）；血量低于20%自动回血；死亡时秒杀全场。",
+        "isMogu": false,
+        "xiyoudu": 5,
+        "plantId": 124,
+        "cost": 75,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "南瓜壳",
+        "jieshao": "可以保护内部的植物",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 125,
+        "cost": 125,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "破损南瓜壳",
+        "jieshao": "保护内部的植物。虽然血量低，但是冷却超快",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 126,
+        "cost": 50,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "勇者菇",
+        "jieshao": "僵尸离得越近射速越快。攻击时挥剑额外造成群体伤害，并使近距离的僵尸寒冷或冰冻",
+        "isMogu": true,
+        "xiyoudu": 1,
+        "plantId": 127,
+        "cost": 150,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "傻呆变身茄子",
+        "jieshao": "随机变身为一张劣质植物。小概率变身其他品质的植物",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 128,
+        "cost": 100,
+        "coolDown": 15.0
+    },
+    {
+        "namea": "飞天向日葵",
+        "jieshao": "提供你额外的阳光。可以种植在任意地方",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 129,
+        "cost": 25,
+        "coolDown": 9.0
+    },
+    {
+        "namea": "天使猫猫星",
+        "jieshao": "一次发射五个跟踪星星子弹。可以种植在任意地方",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 130,
+        "cost": 175,
+        "coolDown": 25.0
+    },
+    {
+        "namea": "寒冰之花",
+        "jieshao": "每隔一段时间，生产一张寒冰樱桃卡片",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 131,
+        "cost": 100,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "潘多拉之芽",
+        "jieshao": "发射大量随机的子弹后消失",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 132,
+        "cost": 125,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "叶子保护伞",
+        "jieshao": "保护邻近的植物, 免受蹦极僵尸和投手僵尸的攻击",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 133,
+        "cost": 125,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "斯巴达克斯孢",
+        "jieshao": "能砍能防！画师：无忆清为",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 134,
+        "cost": 25,
+        "coolDown": 20.0
+    },
+    {
+        "namea": "三头向日葵",
+        "jieshao": "为你提供大量的阳光。画师：mega阳光菇",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 135,
+        "cost": 125,
+        "coolDown": 9.0
+    },
+    {
+        "namea": "飞行苹果医生",
+        "jieshao": "可以种植在任意地方；为当前格子的所有植物回复大量血量，自己不会被僵尸发现。",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 136,
+        "cost": 175,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "吸血南瓜壳",
+        "jieshao": "每隔一段时间吸收自己所保护植物的血量，转化为自身的血量。",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 137,
+        "cost": 150,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "恶魔高坚果",
+        "jieshao": "血量极高，自身每隔一段时间会掉血，被僵尸攻击时无敌并回血。每隔一段时间，生产一只魅惑恶魔僵尸",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 138,
+        "cost": 75,
+        "coolDown": 21.0
+    },
+    {
+        "namea": "花嘴大",
+        "jieshao": "尸僵掉吃口一呜啊",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 139,
+        "cost": 125,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "机枪石榴壳",
+        "jieshao": "快速的发射大量伤害较低的石榴子弹。可以保护内部的植物",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 140,
+        "cost": 75,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "金钱樱桃炸弹",
+        "jieshao": "炸掉一定区域内的所有僵尸。不需要阳光，没有冷却，但是需要在商店购买使用次数。卡槽上的数字为剩余使用次数",
+        "isMogu": false,
+        "xiyoudu": 2,
+        "plantId": 141,
+        "cost": 0,
+        "coolDown": 0.0
+    },
+    {
+        "namea": "月夜大喷菇",
+        "jieshao": "向敌人发射伤害较高的穿透孢子。月夜升级后：向敌人发射伤害较高的爆炸子弹。",
+        "isMogu": true,
+        "xiyoudu": 1,
+        "plantId": 142,
+        "cost": 100,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "月夜三头大喷菇",
+        "jieshao": "向上中下三行的敌人发射伤害较高的穿透孢子。月夜升级后：攻速降低，攻击范围改为一整行。",
+        "isMogu": true,
+        "xiyoudu": 1,
+        "plantId": 143,
+        "cost": 225,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "(月夜)黑石射手",
+        "jieshao": "发射必定击退僵尸的子弹。月夜升级后：攻速降低，可以击退群体僵尸",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 144,
+        "cost": 200,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "飞天金盏花",
+        "jieshao": "提供你额外的银币/金币/钻石。可以种植在任意地方",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 145,
+        "cost": 50,
+        "coolDown": 30.0
+    },
+    {
+        "namea": "猫豆子射手",
+        "jieshao": "123",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 146,
+        "cost": 100,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "钱袋子投手",
+        "jieshao": "投掷钱袋子子弹，命中僵尸有概率获得银币，小概率获得金币。",
+        "isMogu": false,
+        "xiyoudu": 3,
+        "plantId": 147,
+        "cost": 25,
+        "coolDown": 12.0
+    },
+    {
+        "namea": "恶霸西瓜",
+        "jieshao": "投掷西瓜对范围内的僵尸造成伤害。没别的，纯劲儿大",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 148,
+        "cost": 800,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "月夜阳光保护伞",
+        "jieshao": "保护植物的同时每隔一段时间生产一个阳光。月夜升级后：改为生产一个大阳光。种植后立刻给予左右两格的月夜植物升级",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 149,
+        "cost": 25,
+        "coolDown": 7.5
+    },
+    {
+        "namea": "破烂叶子保护伞",
+        "jieshao": "保护邻近的植物, 免受蹦极僵尸和投手僵尸的攻击。只能保护三次",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 150,
+        "cost": 100,
+        "coolDown": 10.0
+    },
+    {
+        "namea": "普通僵尸",
+        "jieshao": "小心...别让他吃掉你的脑子！",
+        "isMogu": false,
+        "xiyoudu": 0,
+        "plantId": 151,
+        "cost": -25,
+        "coolDown": 5.0
+    },
+    {
+        "namea": "呆呆魅惑菇",
+        "jieshao": "应该可以让一只僵尸为你作战....吧...",
+        "isMogu": true,
+        "xiyoudu": 1,
+        "plantId": 152,
+        "cost": 0,
+        "coolDown": 20.0
+    },
+    {
+        "namea": "潘多拉保护伞",
+        "jieshao": "保护周围的植物，每保护一次就会生产一圈子弹。每隔一段时间会额外生产一圈子弹。可以防护攻击自身的子弹",
+        "isMogu": false,
+        "xiyoudu": 1,
+        "plantId": 153,
+        "cost": 225,
+        "coolDown": 7.5
+    }
+]

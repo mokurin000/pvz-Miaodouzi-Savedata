@@ -1,0 +1,335 @@
+[
+    {
+        "namea": "普通僵尸",
+        "jieshao": "很普通的僵尸",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 0,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "路障僵尸",
+        "jieshao": "很路障的僵尸",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 1,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "铁桶僵尸",
+        "jieshao": "很铁桶的僵尸",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 2,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "愤怒僵尸",
+        "jieshao": "很愤怒的僵尸，会快速的冲撞碰见的第一个植物，冲撞完成后消气",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 3,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "撑杆僵尸",
+        "jieshao": "会跨越过遇到的第一棵植物，体育生跳的远",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 4,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "子弹撑杆僵尸",
+        "jieshao": "在断手前持续发射子弹攻击植物；会跨越过遇到的第一棵植物，体育生跳的远",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 5,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "金桶僵尸",
+        "jieshao": "很心疼自己的金桶，被打掉后加速",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 6,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "读报僵尸",
+        "jieshao": "掉落报纸后暴怒",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 7,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "巨人读报僵尸",
+        "jieshao": "掉落报纸后暴怒；血量极高",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 8,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "橄榄球僵尸",
+        "jieshao": "橄榄球僵尸的表演秀。",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 9,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "黑橄榄球僵尸",
+        "jieshao": "血量极高",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 10,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "铁门僵尸",
+        "jieshao": "他的铁栅门是有效的盾牌。",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 11,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "彩虹门僵尸",
+        "jieshao": "他的彩虹门不仅能保护自己，还能让身后的僵尸无敌",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 12,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "魔法帽僵尸",
+        "jieshao": "发射魔法子弹，攻击植物并将植物向前拖拽",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 13,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "矿工僵尸",
+        "jieshao": "这种僵尸通过挖隧道来穿过你的防御。",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 14,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "中场矿工僵尸",
+        "jieshao": "这种僵尸通过挖隧道来到达你植物阵营的中心来进行偷袭。",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 15,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "小鬼僵尸",
+        "jieshao": "小鬼僵尸的移动速度极快，但是松弛的血量又弥补了这一优点",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 16,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "路障礼盒僵尸",
+        "jieshao": "这种僵尸不知为何能从礼盒中掏出无穷无尽的小鬼僵尸。",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 17,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "小丑僵尸",
+        "jieshao": "这种僵尸带着个会爆炸的潘多拉盒子",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 18,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "小鬼小丑僵尸",
+        "jieshao": "这种僵尸带着个会爆炸的潘多拉盒子......和一大堆小鬼僵尸？！早爆概率更高，爆炸后产生一大堆小鬼僵尸",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 19,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "蹦极僵尸",
+        "jieshao": "蹦极僵尸从天上攻击，偷取你的植物",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 20,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "靶子铁桶僵尸",
+        "jieshao": "铁桶掉落后，从天上召唤一大堆僵尸",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 21,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "黑暗蹦极僵尸",
+        "jieshao": "黑暗蹦极僵尸从天上降落，保护僵尸。不会偷取植物",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 22,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "伽刚特尔",
+        "jieshao": "伽刚特尔是一种巨型僵尸",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 23,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "红眼伽刚特尔",
+        "jieshao": "红眼伽刚特尔也是一种巨型僵尸",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 24,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "爆炸伽刚特尔",
+        "jieshao": "爆炸伽刚特尔锤击时会发生爆炸，扔小鬼后会加速，持续到碰到植物或者被减速",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 25,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "礼盒僵尸",
+        "jieshao": "十分随机的一种僵尸",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 26,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "机械僵尸麋鹿",
+        "jieshao": "啃咬造成较高的伤害；会不定期投掷小鬼",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 27,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "冬日魔法僵尸",
+        "jieshao": "发射寒冷子弹，穿透一整行的植物",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 28,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "冬日僵尸",
+        "jieshao": "这种僵尸从天而降，死亡后会掉落礼盒。",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 29,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "恶魔僵尸",
+        "jieshao": "每过一段时间，给本行的普通僵尸类僵尸给予狂暴，加速。",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 30,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "恶魔铁桶僵尸",
+        "jieshao": "每过一段时间，给场上所有普通僵尸附加铁桶。一个普通僵尸只能附加一次。",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 31,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "超级机枪僵尸",
+        "jieshao": "发射大量子弹，攻击植物",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 32,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "土豪橄榄球僵尸",
+        "jieshao": "土豪橄榄球僵尸视金钱如粪土。",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 33,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "普通墓碑",
+        "jieshao": "很普通的墓碑",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 34,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "灼烧墓碑",
+        "jieshao": "每过一段时间，灼烧周围3*3范围的植物。火焰植物会免疫灼烧伤害",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 35,
+        "cost": 75,
+        "coolDown": 50.0
+    },
+    {
+        "namea": "阳光墓碑",
+        "jieshao": "帮你存阳光呢！还不感谢阳光墓碑？",
+        "isMogu": true,
+        "xiyoudu": 0,
+        "plantId": 36,
+        "cost": 75,
+        "coolDown": 50.0
+    }
+]

@@ -12,7 +12,10 @@ from pvz_miaodouzi import PLANTS, Rarity, load_save, write_save
 def pinyin_match(filter_text: str, choice: Choice):
     title = choice.title.lower()
 
-    return filter_text.lower() in "".join(pypinyin.lazy_pinyin(title))
+    pinyin = pypinyin.lazy_pinyin(title)
+
+    return filter_text.lower() in "".join(pinyin) or \
+        filter_text.lower() in "".join(p[0] for p in pinyin)
 
 
 def handle_file_error(e: OSError, operation: str) -> None:

@@ -21,3 +21,9 @@ python3 md5_calc.py
 - Android:
     - 单用户: `/storage/emulated/0/Android/com.MiaoDouzi.PVZ/files/`
     - 多用户: `/data/media/[USER]/Android/com.MiaoDouzi.PVZ/files/`
+
+## 打包
+
+```bash
+uv run pyinstaller --noconfirm --onefile --collect-data pvz_miaodouzi src\pvz_miaodouzi\edit_save.py --optimize 2 
+```

@@ -1,0 +1,11 @@
+cargo-features = ["panic-immediate-abort"]
+
+[workspace]
+members = ["save-edit-rs"]
+resolver = "3"
+
+[profile.release]
+lto = true
+strip = true
+panic = "immediate-abort"
+opt-level = "z"

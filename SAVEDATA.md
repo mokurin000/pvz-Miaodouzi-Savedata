@@ -16,6 +16,11 @@
 - `maoliang`: 猫粮 购买次数
 - `chushisun`: 初始阳光 购买次数
 
+- `wujinceng2`: 限定抽卡当前层数
+- `wujinceng2Last`: 限定抽卡最高层数
+- `wujinceng`: 无尽层数
+- `wujinceng3`: IFA无尽层数
+
 - `shangdian`: 商店物品
 
 > | id  | 类型/物品名称          | 说明 |

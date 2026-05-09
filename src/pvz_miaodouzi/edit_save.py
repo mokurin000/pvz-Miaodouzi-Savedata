@@ -1,34 +1,25 @@
-import json
+import errno
 from pathlib import Path
-from hashlib import md5
-from _hashlib import HASH
 from sys import argv
 
 import questionary
 
-from pvz_miaodouzi import PLANTS, Rarity
+from pvz_miaodouzi import PLANTS, Rarity, load_save, write_save
 
 
-def load_save(path: Path):
-    with path.open("r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-def write_save(path: Path, data: dict):
-    def hash_digest(h: HASH) -> HASH:
-        return md5(h.digest())
-
-    json_bytes = json.dumps(data, ensure_ascii=False, separators=(",", ":")).encode(
-        "utf-8"
-    )
-    with path.open("wb") as f:
-        f.write(json_bytes)
-
-    h = md5(json_bytes)
-    save_3md5 = hash_digest(hash_digest(h)).hexdigest()
-
-    with path.with_suffix(".json.md5").open("w", encoding="utf-8") as f:
-        f.write(save_3md5)
+def handle_file_error(e: OSError, operation: str) -> None:
+    """统一的文件错误处理 helper"""
+    match e.errno:
+        case errno.ENOENT | errno.ENOTDIR:
+            print(f"无法{operation}存档：文件或路径不存在")
+        case errno.EPERM | errno.EACCES:
+            print(f"无法{operation}存档：权限不足")
+        case errno.ENOSPC:
+            print(f"无法{operation}存档：磁盘空间不足")
+        case errno.EISDIR:
+            print(f"无法{operation}存档：目标是目录而非文件")
+        case _:
+            print(f"无法{operation}存档：未知错误：{e}")
 
 
 def main():
@@ -38,6 +29,7 @@ def main():
         print("用法: edit-savedata save.json")
         return
 
+    # 稀有度选择
     rarity_choices = [
         questionary.Choice(title=member.name, value=member) for member in Rarity
     ]
@@ -51,15 +43,31 @@ def main():
         return
 
     selected_set = set(selected_rarities)
-
     plant_ids = [card.plantId for card in PLANTS if card.xiyoudu in selected_set]
 
-    save_data = load_save(path)
+    # ==================== 读取存档 ====================
+    try:
+        save_data = load_save(path)
+    except OSError as e:
+        handle_file_error(e, "加载")
+        return
+    except Exception as e:
+        print(f"未知错误：{e}")
+        return
+
+    # ==================== 写入存档 ====================
     save_data["scores"] = plant_ids
 
-    write_save(path, save_data)
+    try:
+        write_save(path, save_data)
+    except OSError as e:
+        handle_file_error(e, "写出")
+        return
+    except Exception as e:
+        print(f"未知错误：{e}")
+        return
 
-    print(f"已写入 {len(plant_ids)} 个 plantId 到 save.json")
+    print(f"已成功写入 {len(plant_ids)} 个 plantId 到存档文件")
 
 
 if __name__ == "__main__":

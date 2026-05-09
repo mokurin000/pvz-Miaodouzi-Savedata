@@ -1,6 +1,8 @@
 import json
 from enum import IntEnum
 from pathlib import Path
+from hashlib import md5
+from _hashlib import HASH
 
 from pydantic import BaseModel
 
@@ -41,10 +43,29 @@ DATA_PATH = Path(__file__).parent / "data"
 
 
 with (DATA_PATH / "Plants.json").open("r", encoding="utf-8") as f:
-    raw_data = json.load(f)
+    PLANTS: list[CardInfo] = [CardInfo.model_validate(item) for item in json.load(f)]
 
 with (DATA_PATH / "Zombies.json").open("r", encoding="utf-8") as f:
-    raw_data_zom = json.load(f)
+    ZOMBIES: list[CardInfo] = [CardInfo.model_validate(item) for item in json.load(f)]
 
-PLANTS: list[CardInfo] = [CardInfo.model_validate(item) for item in raw_data]
-ZOMBIES: list[CardInfo] = [CardInfo.model_validate(item) for item in raw_data_zom]
+
+def load_save(path: Path):
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def write_save(path: Path, data: dict):
+    def hash_digest(h: HASH) -> HASH:
+        return md5(h.digest())
+
+    json_bytes = json.dumps(data, ensure_ascii=False, separators=(",", ":")).encode(
+        "utf-8"
+    )
+    with path.open("wb") as f:
+        f.write(json_bytes)
+
+    h = md5(json_bytes)
+    save_3md5 = hash_digest(hash_digest(h)).hexdigest()
+
+    with path.with_suffix(".json.md5").open("w", encoding="utf-8") as f:
+        f.write(save_3md5)

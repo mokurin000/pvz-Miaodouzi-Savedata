@@ -2,9 +2,17 @@ import errno
 from pathlib import Path
 from sys import argv
 
+import pypinyin
 import questionary
+from questionary import Choice
 
 from pvz_miaodouzi import PLANTS, Rarity, load_save, write_save
+
+
+def pinyin_match(filter_text: str, choice: Choice):
+    title = choice.title.lower()
+
+    return filter_text.lower() in "".join(pypinyin.lazy_pinyin(title))
 
 
 def handle_file_error(e: OSError, operation: str) -> None:
@@ -104,8 +112,9 @@ def main():
         selected_ids = questionary.checkbox(
             "选择要持有的卡牌：",
             choices=choices,
-            instruction=f"{instruction_ctrl}\n输入阳光或ID搜索",
+            instruction=f"{instruction_ctrl}\n输入阳光, ID或拼音搜索",
             use_search_filter=True,
+            search_filter_fn=pinyin_match,
             use_jk_keys=False,
         ).ask()
 

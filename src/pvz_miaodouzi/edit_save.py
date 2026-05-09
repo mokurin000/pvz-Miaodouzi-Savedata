@@ -29,7 +29,8 @@ def main():
         print("用法: edit-savedata save.json")
         return
 
-    instruction = "\n空格开关, ↑↓移动, i反选, a全选"
+    instruction_ctrl = "\n空格开关, ↑↓移动, Ctrl-I反选, Ctrl-A全选"
+    instruction = instruction_ctrl.replace("Ctrl-", "")
 
     # ==================== 模式选择 ====================
     mode = questionary.select(
@@ -103,7 +104,7 @@ def main():
         selected_ids = questionary.checkbox(
             "选择要持有的卡牌：",
             choices=choices,
-            instruction=f"{instruction}\n输入阳光或ID搜索",
+            instruction=f"{instruction_ctrl}\n输入阳光或ID搜索",
             use_search_filter=True,
             use_jk_keys=False,
         ).ask()

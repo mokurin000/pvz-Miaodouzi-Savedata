@@ -11,7 +11,7 @@ def bundle_main():
             os.getenv("UserProfile") / "AppData",
         )
 
-        savedata = Path(appdata) / "LocalLow" / "MiaoDouzi" / "抽卡版PVZ"
+        savedata = Path(appdata) / "LocalLow" / "MiaoDouzi" / "抽卡版PVZ" / "save.json"
         if savedata.exists():
             edit_savedata(savedata)
             return

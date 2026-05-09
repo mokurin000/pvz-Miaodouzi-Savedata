@@ -1,7 +1,7 @@
 ## Savedata
 
-- `scores`: Cards you have
-- `scores2`: Cards for Limited Gacha
+- `scores`: 抽卡记录
+- `scores2`: 限定抽卡
 - `Difficulty`:
 > 0 正常
 > 1 简单
@@ -16,7 +16,7 @@
 - `maoliang`: 猫粮 购买次数
 - `chushisun`: 初始阳光 购买次数
 
-- `shangdian`: shop items
+- `shangdian`: 商店物品
 
 > | id  | 类型/物品名称          | 说明 |
 > |-----|-----------------------|------|

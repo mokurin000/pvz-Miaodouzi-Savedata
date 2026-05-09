@@ -3,7 +3,7 @@ from pathlib import Path
 from hashlib import md5
 from _hashlib import HASH
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict
 from pydantic.alias_generators import to_camel
 
 from pvz_miaodouzi.rarity import Rarity, RARITY_BY_ID
@@ -33,12 +33,12 @@ class CardInfo(BaseModel):
     plant_id: int
     """卡组内 ID，植物与僵尸分别为一组"""
 
-    xiyoudu_: Rarity = Field(validation_alias="xiyoudu")
+    xiyoudu: Rarity
 
     @property
     def rarity(self) -> Rarity:
         """稀有度"""
-        return RARITY_BY_ID.get(self.plant_id, self.xiyoudu_)
+        return RARITY_BY_ID.get(self.plant_id, self.xiyoudu)
 
 
 DATA_PATH = Path(__file__).parent / "data"

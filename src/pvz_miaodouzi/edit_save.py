@@ -29,6 +29,8 @@ def main():
         print("用法: edit-savedata save.json")
         return
 
+    instruction = "\n空格开关, ↑↓移动, i反选, a全选"
+
     # ==================== 模式选择 ====================
     mode = questionary.select(
         "请选择编辑模式：",
@@ -64,7 +66,9 @@ def main():
         ]
 
         selected_rarities = questionary.checkbox(
-            "选择要开启的卡牌稀有度：", choices=rarity_choices
+            "选择要开启的卡牌稀有度：",
+            choices=rarity_choices,
+            instruction=instruction,
         ).ask()
 
         if not selected_rarities:
@@ -97,9 +101,11 @@ def main():
             )
 
         selected_ids = questionary.checkbox(
-            "选择要持有的卡牌（空格键切换，上下键移动）：",
+            "选择要持有的卡牌：",
             choices=choices,
-            instruction="当前已持有的卡牌已默认勾选",
+            instruction=f"{instruction}\n输入阳光或ID搜索",
+            use_search_filter=True,
+            use_jk_keys=False,
         ).ask()
 
         if selected_ids is None:  # 用户取消

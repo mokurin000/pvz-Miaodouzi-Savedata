@@ -25,5 +25,5 @@ python3 md5_calc.py
 ## 打包
 
 ```bash
-uv run pyinstaller --noconfirm --onefile --collect-data pvz_miaodouzi src\pvz_miaodouzi\edit_save.py --optimize 2 
+uv run pyinstaller --noconfirm --onefile --collect-data pvz_miaodouzi src/pvz_miaodouzi/edit_save_bundle.py --optimize 2 
 ```

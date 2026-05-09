@@ -1,6 +1,6 @@
+import sys
 import errno
 from pathlib import Path
-from sys import argv
 
 import pypinyin
 import questionary
@@ -14,8 +14,9 @@ def pinyin_match(filter_text: str, choice: Choice):
 
     pinyin = pypinyin.lazy_pinyin(title)
 
-    return filter_text.lower() in "".join(pinyin) or \
-        filter_text.lower() in "".join(p[0] for p in pinyin)
+    return filter_text.lower() in "".join(pinyin) or filter_text.lower() in "".join(
+        p[0] for p in pinyin
+    )
 
 
 def handle_file_error(e: OSError, operation: str) -> None:
@@ -33,13 +34,7 @@ def handle_file_error(e: OSError, operation: str) -> None:
             print(f"无法{operation}存档：未知错误：{e}")
 
 
-def main():
-    if len(argv) > 1:
-        path = Path(argv[1])
-    else:
-        print("用法: edit-savedata save.json")
-        return
-
+def edit_savedata(path: Path):
     instruction_ctrl = "\n空格开关, ↑↓移动, Ctrl-I反选, Ctrl-A全选"
     instruction = instruction_ctrl.replace("Ctrl-", "")
 
@@ -135,6 +130,16 @@ def main():
         handle_file_error(e, "写出")
     except Exception as e:
         print(f"未知错误：{e}")
+
+
+def main():
+    if len(sys.argv) > 1:
+        path = Path(sys.argv[1])
+    else:
+        print("用法: edit-savedata save.json")
+        return
+
+    edit_savedata(path)
 
 
 if __name__ == "__main__":

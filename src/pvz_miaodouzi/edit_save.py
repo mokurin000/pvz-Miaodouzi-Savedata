@@ -29,21 +29,21 @@ def main():
         print("用法: edit-savedata save.json")
         return
 
-    # 稀有度选择
-    rarity_choices = [
-        questionary.Choice(title=member.name, value=member) for member in Rarity
-    ]
-
-    selected_rarities = questionary.checkbox(
-        "选择要开启的卡牌稀有度：", choices=rarity_choices
+    # ==================== 模式选择 ====================
+    mode = questionary.select(
+        "请选择编辑模式：",
+        choices=[
+            questionary.Choice("按卡牌（可单独开启/关闭每张卡）", value="card"),
+            questionary.Choice("按卡组（按稀有度批量开启）", value="set"),
+        ],
+        instruction="\n"
+        "· 卡组模式会【清空】当前已持有的卡牌，只保留本次选择的稀有度卡牌\n"
+        "· 卡牌模式会保留当前存档中的卡牌，你可以按需增删",
     ).ask()
 
-    if not selected_rarities:
-        print("未选择任何稀有度，退出")
+    if not mode:
+        print("未选择模式，退出")
         return
-
-    selected_set = set(selected_rarities)
-    plant_ids = [card.plantId for card in PLANTS if card.xiyoudu in selected_set]
 
     # ==================== 读取存档 ====================
     try:
@@ -55,19 +55,67 @@ def main():
         print(f"未知错误：{e}")
         return
 
-    # ==================== 写入存档 ====================
-    save_data["scores"] = plant_ids
+    current_scores = set(save_data.get("scores", []))
 
+    # ==================== 卡组模式 ===================
+    if mode == "set":
+        rarity_choices = [
+            questionary.Choice(title=member.name, value=member) for member in Rarity
+        ]
+
+        selected_rarities = questionary.checkbox(
+            "选择要开启的卡牌稀有度：", choices=rarity_choices
+        ).ask()
+
+        if not selected_rarities:
+            print("未选择任何稀有度，退出")
+            return
+
+        selected_set = set(selected_rarities)
+        plant_ids = [card.plantId for card in PLANTS if card.xiyoudu in selected_set]
+
+        save_data["scores"] = plant_ids
+        print(f"已选择 {len(plant_ids)} 个 plantId")
+
+    # ==================== 卡牌模式 ====================
+    else:  # mode == "card"
+        # 构建卡牌选择列表
+        choices = []
+        for card in sorted(PLANTS, key=lambda c: (c.xiyoudu, c.plantId)):
+            checked = card.plantId in current_scores
+
+            title = f"[{card.plantId:03}-{card.xiyoudu.name}] {card.namea} - 阳光:{card.cost}"
+            if card.isMogu:
+                title += " [夜间]"
+
+            choices.append(
+                questionary.Choice(
+                    title=title,
+                    value=card.plantId,
+                    checked=checked,
+                )
+            )
+
+        selected_ids = questionary.checkbox(
+            "选择要持有的卡牌（空格键切换，上下键移动）：",
+            choices=choices,
+            instruction="当前已持有的卡牌已默认勾选",
+        ).ask()
+
+        if selected_ids is None:  # 用户取消
+            return
+
+        save_data["scores"] = selected_ids
+        print(f"已选择 {len(selected_ids)} 个 plantId")
+
+    # ==================== 写入存档 ====================
     try:
         write_save(path, save_data)
+        print(f"存档写入成功！路径：{path}")
     except OSError as e:
         handle_file_error(e, "写出")
-        return
     except Exception as e:
         print(f"未知错误：{e}")
-        return
-
-    print(f"已成功写入 {len(plant_ids)} 个 plantId 到存档文件")
 
 
 if __name__ == "__main__":

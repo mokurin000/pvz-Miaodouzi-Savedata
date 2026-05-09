@@ -49,7 +49,7 @@ with (DATA_PATH / "Zombies.json").open("r", encoding="utf-8") as f:
     ZOMBIES: list[CardInfo] = [CardInfo.model_validate(item) for item in json.load(f)]
 
 
-def load_save(path: Path):
+def load_save(path: Path) -> dict:
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 

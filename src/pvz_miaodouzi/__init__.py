@@ -1,22 +1,20 @@
 import json
-from enum import IntEnum
 from pathlib import Path
 from hashlib import md5
 from _hashlib import HASH
 
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict, Field
+from pydantic.alias_generators import to_camel
 
-
-class Rarity(IntEnum):
-    劣质卡 = 0
-    普通卡 = 1
-    稀有卡 = 2
-    史诗卡 = 3
-    传奇卡 = 4
-    炼狱卡 = 5
+from pvz_miaodouzi.rarity import Rarity, RARITY_BY_ID
 
 
 class CardInfo(BaseModel):
+    model_config = ConfigDict(
+        validate_by_alias=True,
+        alias_generator=to_camel,
+    )
+
     namea: str
     """卡牌名称"""
 
@@ -26,17 +24,21 @@ class CardInfo(BaseModel):
     cost: int
     """阳光花费"""
 
-    coolDown: float
+    cool_down: float
     """冷却时间（秒）"""
 
-    isMogu: bool
+    is_mogu: bool
     """是否为夜间作物"""
 
-    xiyoudu: Rarity
-    """稀有度"""
-
-    plantId: int
+    plant_id: int
     """卡组内 ID，植物与僵尸分别为一组"""
+
+    xiyoudu_: Rarity = Field(validation_alias="xiyoudu")
+
+    @property
+    def rarity(self) -> Rarity:
+        """稀有度"""
+        return RARITY_BY_ID.get(self.plant_id, self.xiyoudu_)
 
 
 DATA_PATH = Path(__file__).parent / "data"

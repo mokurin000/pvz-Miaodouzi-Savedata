@@ -77,7 +77,7 @@ def main():
             return
 
         selected_set = set(selected_rarities)
-        plant_ids = [card.plantId for card in PLANTS if card.xiyoudu in selected_set]
+        plant_ids = [card.plant_id for card in PLANTS if card.rarity in selected_set]
 
         save_data["scores"] = plant_ids
         print(f"已选择 {len(plant_ids)} 个 plantId")
@@ -86,17 +86,17 @@ def main():
     else:  # mode == "card"
         # 构建卡牌选择列表
         choices = []
-        for card in sorted(PLANTS, key=lambda c: (c.xiyoudu, c.plantId)):
-            checked = card.plantId in current_scores
+        for card in sorted(PLANTS, key=lambda c: (c.rarity, c.plant_id)):
+            checked = card.plant_id in current_scores
 
-            title = f"[{card.plantId:03}-{card.xiyoudu.name}] {card.namea} - 阳光:{card.cost}"
-            if card.isMogu:
+            title = f"[{card.plant_id:03}-{card.rarity.name}] {card.namea} - 阳光:{card.cost}"
+            if card.is_mogu:
                 title += " [夜间]"
 
             choices.append(
                 questionary.Choice(
                     title=title,
-                    value=card.plantId,
+                    value=card.plant_id,
                     checked=checked,
                 )
             )

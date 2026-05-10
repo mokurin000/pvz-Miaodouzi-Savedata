@@ -6,7 +6,31 @@
 
 《植物大战僵尸》抽卡版存档 md5 计算代码
 
-## 用法
+## 存档修改器
+
+### 常见系统
+
+```bash
+uv tool install https://github.com/mokurin000/pvz-Miaodouzi-Savedata --compile-bytecode
+```
+
+### Termux
+
+```bash
+uv tool install https://github.com/mokurin000/pvz-Miaodouzi-Savedata \
+    --with pydantic==2.12.5 \
+    --with pydantic-core==2.41.5 \
+    --extra-index-url https://termux-user-repository.github.io/pypi/ \
+    --compile-bytecode
+```
+
+## 存档修改器
+
+```bash
+pvzmdz-edit-save save.json
+```
+
+## 计算MD5
 
 ```bash
 # 下载脚本本体

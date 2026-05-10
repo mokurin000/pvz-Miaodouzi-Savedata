@@ -79,7 +79,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "pydantic", specifier = ">=2.13.4" },
+    { name = "pydantic", specifier = ">=2.11.0" },
     { name = "pypinyin", specifier = ">=0.55.0" },
     { name = "questionary", git = "https://github.com/mokurin000/questionary.git?rev=feat%2Fcustom-search-fn" },
 ]

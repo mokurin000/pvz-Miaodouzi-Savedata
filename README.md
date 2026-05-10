@@ -11,13 +11,13 @@
 ### 常见系统
 
 ```bash
-uv tool install https://github.com/mokurin000/pvz-Miaodouzi-Savedata --compile-bytecode
+uv tool install git+https://github.com/mokurin000/pvz-Miaodouzi-Savedata --compile-bytecode
 ```
 
 ### Termux
 
 ```bash
-uv tool install https://github.com/mokurin000/pvz-Miaodouzi-Savedata \
+uv tool install git+https://github.com/mokurin000/pvz-Miaodouzi-Savedata \
     --with pydantic==2.12.5 \
     --with pydantic-core==2.41.5 \
     --extra-index-url https://termux-user-repository.github.io/pypi/ \

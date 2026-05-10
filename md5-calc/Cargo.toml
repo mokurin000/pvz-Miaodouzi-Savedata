@@ -1,5 +1,5 @@
 [package]
-name = "save-edit-rs"
+name = "md5-calc"
 version = "0.1.0"
 edition = "2024"
 

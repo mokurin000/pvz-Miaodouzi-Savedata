@@ -1,7 +1,7 @@
 cargo-features = ["panic-immediate-abort"]
 
 [workspace]
-members = ["save-edit-rs"]
+members = ["md5-calc"]
 resolver = "3"
 
 [profile.release]

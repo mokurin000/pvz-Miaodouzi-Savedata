@@ -98,10 +98,6 @@ def edit_savedata(path: Path):
             title = f"[{card.plant_id:03}-{card.rarity.name}] {card.namea} - 阳光:{card.cost}"
             if card.is_mogu:
                 title += " [夜间]"
-            
-            # skip: sun poke ball
-            if card.plant_id == 11:
-                continue
 
             choices.append(
                 questionary.Choice(

@@ -37,7 +37,7 @@ class CardInfo(BaseModel):
 
     @property
     def rarity(self) -> Rarity:
-        """稀有度"""
+        """植物稀有度，僵尸卡无稀有度"""
         return RARITY_BY_ID.get(self.plant_id, self.xiyoudu)
 
 

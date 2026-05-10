@@ -1,2 +1,5 @@
+[build]
+rustflags = ["-C", "target-cpu=native"]
+
 [unstable]
 build-std = ["std", "panic_abort"]

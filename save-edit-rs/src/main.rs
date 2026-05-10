@@ -1,21 +1,31 @@
 use std::{
     error::Error,
     fs::OpenOptions,
-    io::{Read, Write},
+    io::{Read, Seek, Write},
 };
 
 use hex_simd::{AsciiCase, Out};
 use md5::compute;
+use sonic_rs::Value;
 
 fn main() -> Result<(), Box<dyn Error>> {
     println!("loading savedata...");
     let mut save = OpenOptions::new()
         .create(false)
         .read(true)
-        .write(false)
+        .write(true)
         .open("save.json")?;
+
     let mut buf = Vec::new();
     save.read_to_end(&mut buf)?;
+
+    let json: Value = sonic_rs::from_slice(&buf)?;
+    let compact_json = sonic_rs::to_vec(&json)?;
+    buf = compact_json;
+
+    save.seek(std::io::SeekFrom::Start(0))?;
+    save.set_len(0)?;
+    save.write_all(&buf)?;
 
     println!("calculating hash...");
     let hash1 = compute(buf);

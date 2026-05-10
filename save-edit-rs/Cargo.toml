@@ -6,3 +6,4 @@ edition = "2024"
 [dependencies]
 hex-simd = "0.8.0"
 md5 = "0.8.0"
+sonic-rs = "0.5.8"
